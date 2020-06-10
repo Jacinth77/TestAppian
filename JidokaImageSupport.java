@@ -78,21 +78,6 @@ public class JidokaImageSupport {
 	 * @return
 	 * @throws IOException
 	 */
-	public IFalconImage getImage(Path path) throws IOException {
-
-		IFalconImage image = images.get(path.toString());
-		
-		if (image == null) {
-			
-			image = falcon.getImage(new FalconImageOptions().description(path.getFileName().toString())
-					.file(path.toFile()).colorTolerance(.05f));
-
-		}
-		
-		image.setPointsWhereFound(new ArrayList<>());
-		
-		return image;
-	}
 	
 	/**
 	 * Returns a falcon image referencing image resource test.png
