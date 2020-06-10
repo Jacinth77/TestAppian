@@ -75,17 +75,6 @@ public class JidokaImageSupport {
 	/**
 	 * Returns a falcon image from specified path
 	 * @param path
-	 * @return
-	 * @throws IOException
-	 */
-	
-	/**
-	 * Returns a falcon image referencing image resource test.png
-	 * @return
-	 * @throws IOException
-	 */
-	public IFalconImage getTestPng() throws IOException {
-		return getImage(Paths.get(server.getCurrentDir(), "test.png"));
-	}
+
 
 }
