@@ -55,6 +55,7 @@ public class JidokaImageSupport {
 		server = JidokaFactory.getServer();
 		
 		falcon = IFalcon.getInstance(robot, IWindows.getInstance(robot));
+
 	}
 	
 	/**
@@ -85,8 +86,7 @@ public class JidokaImageSupport {
 			
 			image = falcon.getImage(new FalconImageOptions().description(path.getFileName().toString())
 					.file(path.toFile()).colorTolerance(.05f));
-			
-			images.put(path.toString(), image);
+
 		}
 		
 		image.setPointsWhereFound(new ArrayList<>());
