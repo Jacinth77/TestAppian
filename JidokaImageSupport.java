@@ -59,22 +59,5 @@ public class JidokaImageSupport {
 	}
 	
 	/**
-	 * Returns instance of class
-	 * @param robot	robot
-	 * @return
+	 * TESTINGGGGGGGGGGGGGGGGGs
 	 */
-	public static JidokaImageSupport getInstance(IRobot robot) {
-		
-		if (instance == null) {
-			instance = new JidokaImageSupport(robot);
-		}
-		
-		return instance;
-	}
-	
-	/**
-	 * Returns a falcon image from specified path
-	 * @param path
-
-
-}
